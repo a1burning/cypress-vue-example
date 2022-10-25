@@ -1,5 +1,5 @@
-describe('empty spec', () => {
-  it('passes', () => {
+describe('home spec', () => {
+  it('visit', () => {
     cy.visit('/')
   })
 })
