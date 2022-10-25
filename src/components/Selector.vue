@@ -1,7 +1,7 @@
 <template>
   <div>
+    <h2>cypress选择器</h2>
     <div id="selector" data-cy="selector" class="selector">
-      cypress选择器
       <div class="name">cypress选择器第一个子元素</div>
       <div class="name">cypress选择器第二个子元素</div>
       <div class="name">cypress选择器第三个子元素</div>
