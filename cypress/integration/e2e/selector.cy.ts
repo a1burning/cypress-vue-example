@@ -20,7 +20,7 @@ describe('e2e选择器', () => {
       cy.get('*')
     })
     it('标签选择器', () => {
-      cy.get('img')
+      cy.get('p')
     })
   })
 
