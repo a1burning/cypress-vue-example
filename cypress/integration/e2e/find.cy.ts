@@ -1,7 +1,7 @@
 /**
- * Get命令
+ * Find命令
  */
-describe('Get命令', () => {
+describe('Find命令', () => {
   context('访问网页', () => {
     it('打开网页', () => {
       cy.visit('/')
