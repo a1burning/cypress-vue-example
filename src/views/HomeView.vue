@@ -5,6 +5,7 @@
     <!-- 选择器 -->
     <Selector />
     <Get />
+    <Find />
   </div>
 </template>
 
@@ -13,12 +14,14 @@ import { Component, Vue } from 'vue-property-decorator'
 import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 import Selector from '@/components/Selector.vue' // @ is an alias to /src
 import Get from '@/components/Get.vue' // @ is an alias to /src
+import Find from '@/components/Find.vue' // @ is an alias to /src
 
 @Component({
   components: {
     HelloWorld,
     Selector,
-    Get
+    Get,
+    Find
   }
 })
 export default class HomeView extends Vue {}
