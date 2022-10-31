@@ -7,6 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:open": "cypress open",
+    "test:open_flag1": "cypress open --env flag=1",
     "test:sample": "cypress run --spec",
     "test:run": "cypress run"
   },
