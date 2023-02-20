@@ -9,6 +9,10 @@
       <Find />
       <Contains />
     </div>
+    <div class="flex-4">
+      <Lodash />
+      <Blob />
+    </div>
   </div>
 </template>
 
@@ -19,6 +23,8 @@ import Selector from '@/components/Selector.vue' // @ is an alias to /src
 import Get from '@/components/Get.vue' // @ is an alias to /src
 import Find from '@/components/Find.vue' // @ is an alias to /src
 import Contains from '@/components/Contains.vue' // @ is an alias to /src
+import Lodash from '@/components/Lodash.vue' // @ is an alias to /src
+import Blob from '@/components/Blob.vue' // @ is an alias to /src
 
 @Component({
   components: {
@@ -26,7 +32,9 @@ import Contains from '@/components/Contains.vue' // @ is an alias to /src
     Selector,
     Get,
     Find,
-    Contains
+    Contains,
+    Lodash,
+    Blob
   }
 })
 export default class HomeView extends Vue {}
