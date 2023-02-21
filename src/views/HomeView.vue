@@ -10,6 +10,11 @@
       <Contains />
     </div>
     <div class="flex-4">
+      <AuxiliarySelector />
+      <!-- <Shadow /> -->
+      <Setting />
+    </div>
+    <div class="flex-4">
       <Lodash />
       <Blob />
     </div>
@@ -25,6 +30,9 @@ import Find from '@/components/Find.vue' // @ is an alias to /src
 import Contains from '@/components/Contains.vue' // @ is an alias to /src
 import Lodash from '@/components/Lodash.vue' // @ is an alias to /src
 import Blob from '@/components/Blob.vue' // @ is an alias to /src
+import AuxiliarySelector from '@/components/AuxiliarySelector.vue'
+import Setting from '@/components/Setting.vue'
+import Shadow from '@/components/Shadow.vue'
 
 @Component({
   components: {
@@ -34,7 +42,10 @@ import Blob from '@/components/Blob.vue' // @ is an alias to /src
     Find,
     Contains,
     Lodash,
-    Blob
+    Blob,
+    AuxiliarySelector,
+    Setting,
+    Shadow
   }
 })
 export default class HomeView extends Vue {}

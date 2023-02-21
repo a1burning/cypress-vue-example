@@ -21,6 +21,10 @@ declare global {
         interface Chainable {
             // 里面是自定义指令的名称，参数和返回值
             dataCy(value: string): Chainable<JQuery<HTMLElement>>
+            // 因为nextUntil的类型有写小问题，所以这里重新配置一下
+            nextUntil<K extends keyof HTMLElementTagNameMap>(selector: K, filter?: string, options?: Partial<Loggable & Timeoutable>): Chainable<JQuery<HTMLElementTagNameMap[K]>>
+            nextUntil<E extends Node = HTMLElement>(selector: string, filter?: string, options?: Partial<Loggable & Timeoutable>): Chainable<JQuery<E>>
+            nextUntil<E extends Node = HTMLElement>(element: E | JQuery<E>, filter?: string, options?: Partial<Loggable & Timeoutable>): Chainable<JQuery<E>>
         }
     }
 }

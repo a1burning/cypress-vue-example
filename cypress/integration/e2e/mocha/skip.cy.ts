@@ -39,6 +39,66 @@ describe('skip+hook的测试套件', function () {
   })
 })
 
+describe('skip+hook的测试套件2', function () {
+  before(() => {
+    cy.log('before')
+  })
+
+  beforeEach(() => {
+    cy.log('beforeEach')
+  })
+
+  it.skip('跳过的测试套件1', () => {
+    cy.log('跳过的测试套件1')
+  })
+
+  it('未跳过的测试用例', () => {
+    cy.log('未跳过的测试用例')
+  })
+
+  it.skip('跳过的测试套件2', () => {
+    cy.log('跳过的测试套件2')
+  })
+
+  afterEach(() => {
+    cy.log('afterEach')
+  })
+
+  after(() => {
+    cy.log('after')
+  })
+})
+
+describe('skip+hook的测试套件3', function () {
+  before(() => {
+    cy.log('before')
+  })
+
+  beforeEach(() => {
+    cy.log('beforeEach')
+  })
+
+  it('未跳过的测试用例1', () => {
+    cy.log('未跳过的测试用例')
+  })
+
+  it.skip('跳过的测试套件', () => {
+    cy.log('跳过的测试套件')
+  })
+
+  it('未跳过的测试套件2', () => {
+    cy.log('未跳过的测试套件2')
+  })
+
+  afterEach(() => {
+    cy.log('afterEach')
+  })
+
+  after(() => {
+    cy.log('after')
+  })
+})
+
 describe('动态跳过测试用例1', function () {
   it('test', function () {
     cy.log('skip函数之前的log方法')

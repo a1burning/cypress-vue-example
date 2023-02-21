@@ -1,8 +1,8 @@
 <template>
-<div id="find" data-cy="find" class="find">
-  <h2>Find命令</h2>
-  <div data-cy="find-head">
-    <p class="block">find block</p>
+<div id="setting" data-cy="setting" class="setting">
+  <h2>命令Config配置文件</h2>
+  <div data-cy="setting-head">
+    <p id="setting1">Setting</p>
   </div>
 </div>
 </template>
@@ -14,7 +14,7 @@ import {
 } from 'vue-property-decorator'
 
 @Component
-export default class Find extends Vue {}
+export default class Setting extends Vue {}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
