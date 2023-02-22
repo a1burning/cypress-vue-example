@@ -35,7 +35,7 @@ describe('Get命令', () => {
   context('get和find的区别', () => {
     it('使用get', () => {
       cy.get('#get-find')
-        // 第二个又扩大了范围
+        // 第二个又扩大了范围，返回一堆数组
         .get('div')
         // 这样找到了两个元素（该用例通过）
         // 一个是get-test-title的div标签

@@ -1,8 +1,8 @@
 <template>
 <div id="auxiliary" data-cy="auxiliary" class="auxiliary">
   <h2>选择元素命令</h2>
-  <p>选择元素命令</p>
-  <div data-cy="auxiliary-head">
+  <div data-test="auxiliary-head">
+    <p class="auxClass">选择元素命令</p>
     <ul id="auxiliarySelector">
       <li id="auxId1">Li1</li>
       <li class="auxClass">Li2</li>
