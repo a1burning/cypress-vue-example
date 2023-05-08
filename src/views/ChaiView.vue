@@ -1,17 +1,17 @@
 <template>
   <div class="about">
     <div class="flex-4">
-      <Browser />
+      <Chai />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Browser from '@/components/Browser.vue'
+import Chai from '@/components/Chai.vue'
 @Component({
   components: {
-    Browser
+    Chai
   }
 })
 export default class HomeView extends Vue {}

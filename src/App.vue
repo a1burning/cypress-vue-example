@@ -2,7 +2,8 @@
   <div id="app">
     <nav>
       <router-link to="/">Cypress命令</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">浏览器命令</router-link> |
+      <router-link to="/chai">Cypress断言</router-link>
     </nav>
     <router-view/>
   </div>
