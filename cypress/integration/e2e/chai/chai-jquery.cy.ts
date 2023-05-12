@@ -8,6 +8,9 @@ describe('chai-jquery相关命令', () => {
   context('书写测试用例', () => {
     it('attr', () => {
       cy.get('[data-test=chai-jquery-cover]').should('have.attr', 'alt', '主题')
+      cy.get('[data-test=chai-jquery-cover]').should($el => {
+        expect($el).to.have.attr('alt', '主题')
+      })
       cy.get('[data-test=chai-jquery-cover]').then($el => {
         expect($el).to.have.attr('alt', '主题')
         expect($el).to.have.attr('alt').match(/主题/)
@@ -18,6 +21,7 @@ describe('chai-jquery相关命令', () => {
       cy.get('[data-test=chai-jquery-cover]').should('not.have.attr', 'href')
       cy.get('[data-test=chai-jquery-cover]').then($el => {
         expect($el).not.to.have.attr('href')
+        expect($el).to.not.have.attr('href')
       })
       // 如果判断的属性不存在写值也可以
       cy.get('[data-test=chai-jquery-cover]').should('not.have.attr', 'href', '/#/chai')
@@ -103,6 +107,7 @@ describe('chai-jquery相关命令', () => {
       cy.get('[data-test=chai-jquery-cover]').should('not.match', '.url')
       cy.get('[data-test=chai-jquery-cover]').then($el => {
         expect($el).not.to.be.match('.url')
+        expect($el).to.not.be.match('.url')
       })
     })
 
@@ -122,6 +127,7 @@ describe('chai-jquery相关命令', () => {
       cy.get('[data-test=chai-jquery-title]').should('have.contain', '主')
       cy.get('[data-test=chai-jquery-title]').then($el => {
         expect($el).to.have.contain('主')
+        expect($el).to.contain('主')
       })
       // 可以判断，但是不是断言语句
       cy.get('[data-test=chai-jquery-title]').contains('主')
@@ -130,6 +136,7 @@ describe('chai-jquery相关命令', () => {
       cy.get('[data-test=chai-jquery-title]').should('not.have.contain', '主题1')
       cy.get('[data-test=chai-jquery-title]').then($el => {
         expect($el).not.to.have.contain('主题1')
+        expect($el).to.not.contain('主题1')
       })
     })
 
@@ -169,6 +176,7 @@ describe('chai-jquery相关命令', () => {
       cy.get('[data-test=chai-jquery-title]').should('not.be.empty')
       cy.get('[data-test=chai-jquery-title]').then($el => {
         expect($el).not.to.be.empty
+        expect($el).to.not.be.empty
       })
       // 内容是标签不算空内容
       cy.get('[data-test=chai-jquery-desc]').should('not.be.empty')

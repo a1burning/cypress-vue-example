@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <div class="flex-4">
+      <ChaiJquery />
       <Chai />
     </div>
   </div>
@@ -8,9 +9,12 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import ChaiJquery from '@/components/ChaiJquery.vue'
 import Chai from '@/components/Chai.vue'
+
 @Component({
   components: {
+    ChaiJquery,
     Chai
   }
 })
